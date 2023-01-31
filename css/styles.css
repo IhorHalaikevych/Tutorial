@@ -44,7 +44,7 @@ body {
 .list {
   
   list-style: none;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .logo {
@@ -66,15 +66,13 @@ body {
   list-style-type: none;
 }
 .header-links {
-  font-family: 'Roboto';
-font-style: normal;
+ 
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 
   color: var(--body-text);
-cursor: pointer;
   text-decoration: none;
 }
 .header-links:hover {
@@ -82,9 +80,8 @@ cursor: pointer;
 }
 
 .adress-items { 
-  font-weight: 400;
+  letter-spacing: 0.02em;
   line-height: 1.5;
-  text-transform: inherit;
   color: var(--adress-text-color);
 }
 .adress-items:hover{
@@ -109,27 +106,26 @@ cursor: pointer;
   background-color: var(--body-text);
 }
 .hero-header {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 56px;
+ font-size: 56px;
 line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--primary-accent-color);
 }
 .button {
+  cursor: pointer;
   font-family: inherit;
   color: var(--primary-accent-color);
 }
 .btn-primary {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family:inherit;
+ 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
 
   cursor: pointer;
+  letter-spacing: 0.04em;
   
   background: var(--primary-brand);
 }
@@ -138,8 +134,8 @@ line-height: 1.07;
   background: var(--primary-pressed-state);
 }
 
-.deck-header{
-  
+.desk-header{
+font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 
@@ -149,7 +145,7 @@ letter-spacing: 0.02em;
 .desk-text{
 font-size: 16px;
 line-height: 1.5;
-
+color: var(--adress-text-color);
 
 letter-spacing: 0.02em;
 
@@ -160,12 +156,8 @@ letter-spacing: 0.02em;
 }
 .section-header {
   
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
-
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -185,10 +177,9 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 }
 .member-position{
-  
-font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
+color: var(--adress-text-color);
 
 letter-spacing: 0.02em;
 }
@@ -202,7 +193,6 @@ letter-spacing: 0.02em;
 
 .footer-studio {
   background-color: var(--body-text);
-  color: var(--primary-accent-color);
 }
 .footer-logo {
   font-family: "Raleway";
@@ -223,10 +213,9 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 }
 .footer-text{
-  
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  color: var(--primary-accent-color);
   
   letter-spacing: 0.02em;
 }
@@ -253,8 +242,18 @@ text-transform: uppercase;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+
+
 }
+/* buttons for fillter*/
+
 .filter-selectors {
+  font-family: inherit;
+  font-size: 16px;
+font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
   color: var(--primary-brand);
   background-color: var(--filter-selectors-bg);
   border: 1px solid var(--filter-selectors-borders);
@@ -263,8 +262,11 @@ text-transform: uppercase;
   color: var(--primary-accent-color);
   background-color: var(--primary-pressed-state);
 }
+.filter-selectors:focus {
+  color: var(--primary-accent-color);
+  background-color: var(--primary-pressed-state);
+}
 .service h2{
-  font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 
@@ -272,10 +274,9 @@ color: var(--body-text);
 
 }
 .service p{
-  font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
-color: var(--body-text);
+color:var(--adress-text-color);
 
 letter-spacing: 0.02em;
 }
